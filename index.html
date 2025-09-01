@@ -166,8 +166,16 @@
   <div class="container contributions-wrap">
     <header class="contributions-header">
       <h2 class="title is-2 contributions-title">Key Contributions</h2>
-      <p class="subtitle is-6 contributions-subtitle">Revolutionary advances in LLM reasoning evaluation and robustness</p>
     </header>
+
+    <div class="guiding-principle">
+      <blockquote>
+        “Design benchmarks that measure how models behave, not just task performance… The goal isn’t to chase SOTA but to interrogate the unknown.”
+      </blockquote>
+      <p class="research-focus">
+        → We focus on the fundamental question: How do LLMs maintain reasoning capabilities under irrelevant context? Rather than designing benchmarks solely for performance, we aim to understand the underlying mechanisms at play.
+      </p>
+    </div>
 
     <div class="contributions-grid">
       <article class="contribution-card">
@@ -223,6 +231,37 @@
     radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
     radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
     radial-gradient(circle at 40% 40%, rgba(120, 119, 198, 0.2) 0%, transparent 50%);
+}
+
+.guiding-principle {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 2rem;
+  margin: 2rem auto 3rem;
+  max-width: 900px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+.guiding-principle blockquote {
+  font-size: 1.25rem;
+  font-style: italic;
+  color: white;
+  margin-bottom: 1.5rem;
+  border-left: none;
+  padding: 0;
+}
+
+.guiding-principle .research-focus {
+  font-size: 1.1rem;
+  color: #ffdd57; /* Vibrant yellow for contrast */
+  font-weight: 500;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .contributions-wrap {
@@ -1109,9 +1148,9 @@
   margin: 0 10px;
 }
 
-.carousel-nav-left,
-.carousel-nav-right {
-  background: rgba(255, 255, 255, 0.2);
+.carousel .slider-navigation-previous,
+.carousel .slider-navigation-next {
+  background: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 50%;
@@ -1123,9 +1162,30 @@
   transition: all 0.3s ease;
 }
 
-.carousel-nav-left:hover,
-.carousel-nav-right:hover {
-  background: rgba(255, 255, 255, 0.3);
+.carousel .slider-navigation-previous svg,
+.carousel .slider-navigation-next svg {
+  display: none;
+}
+
+.carousel .slider-navigation-previous::before {
+  content: '‹';
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.carousel .slider-navigation-next::before {
+  content: '›';
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.carousel .slider-navigation-previous:hover,
+.carousel .slider-navigation-next:hover {
+  background: rgba(0, 0, 0, 0.9);
   transform: scale(1.1);
 }
 </style>

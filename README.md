@@ -1,7 +1,7 @@
-# GSMDC Project Page
+# GSM-DC Project Page
 
-**How Is LLM Reasoning Distracted by Irrelevant Context? An Analysis Using a Controlled Benchmark** (EMNLP 2025)  
-Authors: Minglai Yang, Ethan Huang, Liang Zhang, Mihai Surdeanu, William Wang, Liangming Pan
+**How Is LLM Reasoning Distracted by Irrelevant Context? An Analysis Using a Controlled Benchmark** (EMNLP 2025 Main Conference)  
+Authors: [Minglai Yang](ymingl.com), Ethan Huang, Liang Zhang, [Mihai Surdeanu](https://surdeanu.cs.arizona.edu/mihai/), [William Wang](https://sites.cs.ucsb.edu/~william/), [Liangming Pan](https://liangmingpan.bio/)
 
 ## Citation
 If you use this benchmark / analysis, please cite the paper:
